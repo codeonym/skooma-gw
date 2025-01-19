@@ -1,0 +1,182 @@
+[
+  {
+    "firstName": "Ilyas",
+    "lastName": "ABBAL",
+    "apogee": "1903210",
+    "email": "ilyass.abbal@ump.ac.ma",
+    "phone": "0612345678",
+    "cne": "H120018300",
+    "cni": "FC612910"
+  },
+  {
+    "firstName": "Noura",
+    "lastName": "ALLAM",
+    "apogee": "1903211",
+    "email": "noura.allam@ump.ac.ma",
+    "phone": "0612345679",
+    "cne": "H120018301",
+    "cni": "FC612911"
+  },
+  {
+    "firstName": "Ghizlane",
+    "lastName": "AYADI",
+    "apogee": "1903212",
+    "email": "ghizlane.ayadi@ump.ac.ma",
+    "phone": "0612345680",
+    "cne": "H120018302",
+    "cni": "FC612912"
+  },
+  {
+    "firstName": "Ayoub",
+    "lastName": "BOUAROUR",
+    "apogee": "1903213",
+    "email": "ayoub.bouarour@ump.ac.ma",
+    "phone": "0612345681",
+    "cne": "H120018303",
+    "cni": "FC612913"
+  },
+  {
+    "firstName": "Nabil",
+    "lastName": "CHABAB",
+    "apogee": "1903214",
+    "email": "nabil.chabab@ump.ac.ma",
+    "phone": "0612345682",
+    "cne": "H120018304",
+    "cni": "FC612914"
+  },
+  {
+    "firstName": "Hamza",
+    "lastName": "CHMARKH",
+    "apogee": "1903215",
+    "email": "hamza.chmarkh@ump.ac.ma",
+    "phone": "0612345683",
+    "cne": "H120018305",
+    "cni": "FC612915"
+  },
+  {
+    "firstName": "Taoufiq",
+    "lastName": "El ACHAOUCH",
+    "apogee": "1903216",
+    "email": "toufiq.al_achaouch@ump.ac.ma",
+    "phone": "0612345684",
+    "cne": "H120018306",
+    "cni": "FC612916"
+  },
+  {
+    "firstName": "Ikram",
+    "lastName": "El HASSANI",
+    "apogee": "1903217",
+    "email": "ikram.al_hassani@ump.ac.ma",
+    "phone": "0612345685",
+    "cne": "H120018307",
+    "cni": "FC612917"
+  },
+  {
+    "firstName": "Aymane",
+    "lastName": "ENNAHLI",
+    "apogee": "1903218",
+    "email": "aymane.ennahli@ump.ac.ma",
+    "phone": "0612345686",
+    "cne": "H120018308",
+    "cni": "FC612918"
+  },
+  {
+    "firstName": "Fatima Zohra",
+    "lastName": "HASSANI",
+    "apogee": "1903219",
+    "email": "fatima_zohra.hassani@ump.ac.ma",
+    "phone": "0612345687",
+    "cne": "H120018309",
+    "cni": "FC612919"
+  },
+  {
+    "firstName": "Khaoula",
+    "lastName": "ITRO",
+    "apogee": "1903220",
+    "email": "khaoula.itro@ump.ac.ma",
+    "phone": "0612345688",
+    "cne": "H120018310",
+    "cni": "FC612920"
+  },
+  {
+    "firstName": "Sajia",
+    "lastName": "JAFJAF",
+    "apogee": "1903221",
+    "email": "sajia.jafjaf@ump.ac.ma",
+    "phone": "0612345689",
+    "cne": "H120018311",
+    "cni": "FC612921"
+  },
+  {
+    "firstName": "Mohammed",
+    "lastName": "KASMI",
+    "apogee": "1903222",
+    "email": "mohammed.kasmi@ump.ac.ma",
+    "phone": "0612345690",
+    "cne": "H120018312",
+    "cni": "FC612922"
+  },
+  {
+    "firstName": "Rachid",
+    "lastName": "MAHROUG",
+    "apogee": "1903223",
+    "email": "rachid.mahroug@ump.ac.ma",
+    "phone": "0612345691",
+    "cne": "H120018313",
+    "cni": "FC612923"
+  },
+  {
+    "firstName": "Ibrahim",
+    "lastName": "OUFKIR",
+    "apogee": "1903224",
+    "email": "ibrahim.oufkir@ump.ac.ma",
+    "phone": "0612345692",
+    "cne": "H120018314",
+    "cni": "FC612924"
+  },
+  {
+    "firstName": "Oussama",
+    "lastName": "OULAARBI",
+    "apogee": "1903225",
+    "email": "oussama.oulaarbi@ump.ac.ma",
+    "phone": "0612345693",
+    "cne": "H120018315",
+    "cni": "FC612925"
+  },
+  {
+    "firstName": "Abdelmawla",
+    "lastName": "SASSIOUI",
+    "apogee": "1903226",
+    "email": "abdelmawla.sassoui@ump.ac.ma",
+    "phone": "0612345694",
+    "cne": "H120018316",
+    "cni": "FC612926"
+  },
+  {
+    "firstName": "Youssef",
+    "lastName": "ZAMMOURI",
+    "apogee": "1903227",
+    "email": "youssef.zammouri@ump.ac.ma",
+    "phone": "0612345695",
+    "cne": "H120018317",
+    "cni": "FC612927"
+  },
+  {
+    "firstName": "Issam",
+    "lastName": "ZEROUAL",
+    "apogee": "1903228",
+    "email": "issam.zeroual@ump.ac.ma",
+    "phone": "0612345696",
+    "cne": "H120018318",
+    "cni": "FC612928"
+  },
+  {
+    "firstName": "Fatima Zohra",
+    "lastName": "ZERRIF",
+    "apogee": "1903229",
+    "email": "fatima_zohra.zerrif@ump.ac.ma",
+    "phone": "0612345697",
+    "cne": "H120018319",
+    "cni": "FC612929"
+  }
+]

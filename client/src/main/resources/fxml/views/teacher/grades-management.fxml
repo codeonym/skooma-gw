@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<?import java.net.URL?>
+<VBox fx:id="gradeManagementRoot" spacing="20" styleClass="grade-management-view"
+      xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.m2i.client.gui.controllers.teacher.GradesManagementViewController">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label fx:id="headerLabel" styleClass="header-label" text="Grade Management System"/>
+
+    <TabPane fx:id="courseTabPane" VBox.vgrow="ALWAYS">
+        <!-- Tabs will be added dynamically -->
+    </TabPane>
+    <stylesheets>
+        <URL value="@../../../assets/css/teacher/grades-management.css" />
+    </stylesheets>
+</VBox>

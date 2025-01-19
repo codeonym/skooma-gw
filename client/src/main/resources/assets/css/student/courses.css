@@ -1,0 +1,47 @@
+.content-view {
+    -fx-padding: 20;
+    -fx-spacing: 10;
+}
+
+.view-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.action-button {
+    -fx-background-color: transparent;
+    -fx-padding: 5;
+}
+
+.action-button:hover {
+    -fx-background-color: #f0f0f0;
+}
+
+.action-button .ikonli-font-icon {
+    -fx-icon-size: 16px;
+}
+
+.action-button:hover .ikonli-font-icon {
+    -fx-icon-color: #2196F3;
+}
+
+/* Delete button specific styling */
+.action-button:hover .ikonli-font-icon.delete-icon {
+    -fx-icon-color: #F44336;
+}
+
+/* Table styling */
+.mfx-table-view {
+    -fx-background-color: white;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}
+
+.mfx-table-view .table-column {
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 10 15;
+}
+
+.mfx-table-row:hover {
+    -fx-background-color: #f5f5f5;
+}

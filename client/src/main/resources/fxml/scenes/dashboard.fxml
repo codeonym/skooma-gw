@@ -1,0 +1,22 @@
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.m2i.client.gui.controllers.DashboardController">
+
+    <!-- Header -->
+    <top>
+        <fx:include source="../components/header.fxml"/>
+    </top>
+
+    <!-- Sidebar - Make sure it grows vertically -->
+    <left>
+        <VBox VBox.vgrow="ALWAYS">
+            <fx:include source="../components/sidebar.fxml"/>
+        </VBox>
+    </left>
+
+    <!-- Main Content -->
+    <center>
+        <StackPane fx:id="contentArea" VBox.vgrow="ALWAYS"/>
+    </center>
+</BorderPane>

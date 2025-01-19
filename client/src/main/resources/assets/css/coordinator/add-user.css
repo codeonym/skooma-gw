@@ -1,0 +1,40 @@
+/* Root VBox Styles */
+.root {
+    -fx-background-color: white;
+    -fx-padding: 30px 40px 30px 40px;
+}
+
+/* Label Styles */
+.label-title {
+    -fx-font-size: 28;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000;
+}
+
+.label-subtitle {
+    -fx-font-size: 14;
+    -fx-text-fill: #252525;
+}
+
+/* TextField Styles */
+.mfx-text-field {
+    -fx-background-color: transparent;
+}
+
+/* Button Styles */
+.mfx-button-clear {
+    -fx-background-color: #ff3c44;
+    -fx-text-fill: #e2e8f0;
+    -fx-pref-width: 200px;
+}
+
+.mfx-button-register {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-pref-width: 200px;
+}
+
+.error-label {
+    -fx-text-fill: red;
+    -fx-font-size: 12px;
+}

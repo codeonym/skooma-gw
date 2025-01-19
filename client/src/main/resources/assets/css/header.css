@@ -1,0 +1,58 @@
+.header {
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0, 0, 2);
+    -fx-min-height: 60px;
+    -fx-pref-height: 60px;
+}
+
+.header-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.language-selector {
+    -fx-background-radius: 8px;
+}
+
+.theme-toggle {
+    -fx-background-radius: 50%;
+    -fx-min-width: 40px;
+    -fx-min-height: 40px;
+    -fx-padding: 8px;
+}
+
+.profile-section {
+    -fx-spacing: 10;
+}
+
+.profile-avatar {
+    -fx-fill: #f0f0f0;
+    -fx-stroke: #e0e0e0;
+    -fx-stroke-width: 1;
+}
+
+.profile-menu {
+    -fx-background-color: transparent;
+    -fx-padding: 5 10;
+}
+
+.profile-menu .menu-item {
+    -fx-padding: 8 16;
+}
+
+.profile-menu .menu-item:hover {
+    -fx-background-color: #f5f5f5;
+}
+
+/* Dark theme variations */
+.header.dark {
+    -fx-background-color: #2d2d2d;
+}
+
+.header.dark .header-title {
+    -fx-fill: white;
+}
+
+.header.dark .profile-menu .menu-item:hover {
+    -fx-background-color: #3d3d3d;
+}

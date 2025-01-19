@@ -1,0 +1,42 @@
+
+.action-button {
+    -fx-background-radius: 15px;
+    -fx-min-width: 30px;
+    -fx-min-height: 30px;
+    -fx-max-width: 30px;
+    -fx-max-height: 30px;
+    -fx-padding: 0;
+}
+
+.action-button .mfx-font-icon {
+    -mfx-size: 14;
+}
+
+.mfx-table-view .mfx-table-row-cell {
+    -fx-padding: 5;
+}
+
+.status-label {
+    -fx-padding: 5px 10px;
+    -fx-background-radius: 15px;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-min-width: 60px;
+    -fx-alignment: center;
+}
+
+.status-pending {
+    -fx-background-color: #cbd5e1;
+}
+
+.status-generated {
+    -fx-background-color: #6ee7b7;
+}
+
+.status-rejected {
+    -fx-background-color: #fca5a5;
+}
+
+.status-approved {
+    -fx-background-color: #93c5fd;
+}

@@ -1,0 +1,172 @@
+[
+  {
+    "firstName": "El Miloud",
+    "lastName": "JAARA",
+    "email": "el_miloud.jaara@ump.ac.ma",
+    "phone": "0698542875",
+    "department": "FSO - Informatique",
+    "office": 1,
+    "cni": "FF784596",
+    "teacherId": "ES120001"
+  },
+  {
+    "firstName": "Omar",
+    "lastName": "Cisco",
+    "email": "omar.cisco@ump.ac.ma",
+    "phone": "0699992875",
+    "department": "Ecole supérieure de technologie",
+    "office": 58,
+    "cni": "DE784596",
+    "teacherId": "ES120002"
+  },
+  {
+    "firstName": "Abdelhak",
+    "lastName": "LAKHOUAJA",
+    "email": "lakh.abdelhak@ump.ac.ma",
+    "phone": "0612458695",
+    "department": "FSO - Informatique",
+    "office": 2,
+    "cni": "FE784596",
+    "teacherId": "ES120003"
+  },
+  {
+    "firstName": "Khadija",
+    "lastName": "LAAROUSSI",
+    "email": "khadija.laaroussi@ump.ac.ma",
+    "phone": "0612458675",
+    "department": "FSO - Informatique",
+    "office": 3,
+    "cni": "BE784596",
+    "teacherId": "ES120004"
+  },
+  {
+    "firstName": "Sanae",
+    "lastName": "MAZOUZ",
+    "email": "sanae.mazouz@ump.ac.ma",
+    "phone": "0612458688",
+    "department": "FSO - Informatique",
+    "office": 4,
+    "cni": "FF784588",
+    "teacherId": "ES120005"
+  },
+  {
+    "firstName": "Youssef",
+    "lastName": "DOUZI",
+    "email": "youssef.douzi@ump.ac.ma",
+    "phone": "0612784598",
+    "department": "FSO - Informatique",
+    "office": 5,
+    "cni": "FC771588",
+    "teacherId": "ES120006"
+  },
+  {
+    "firstName": "Karima",
+    "lastName": "AISSAOUI",
+    "email": "karima.aissaoui@ump.ac.ma",
+    "phone": "0672784544",
+    "department": "FSO - Informatique",
+    "office": 6,
+    "cni": "FC752583",
+    "teacherId": "ES120007"
+  },
+  {
+    "firstName": "Ibtissam",
+    "lastName": "ARRASSEN",
+    "email": "ibtissam.arrassen@ump.ac.ma",
+    "phone": "0672784547",
+    "department": "FSO - Informatique",
+    "office": 7,
+    "cni": "BA752586",
+    "teacherId": "ES120008"
+  },
+  {
+    "firstName": "Azzedine",
+    "lastName": "MAZROUI",
+    "email": "azzedine.mazroui@ump.ac.ma",
+    "phone": "067744589623",
+    "department": "FSO - Informatique",
+    "office": 8,
+    "cni": "BC752448",
+    "teacherId": "ES120009"
+  },
+  {
+    "firstName": "El Mostafa",
+    "lastName": "DAOUDI",
+    "email": "el_mostafa.daoudi@ump.ac.ma",
+    "phone": "067744587811",
+    "department": "FSO - Informatique",
+    "office": 9,
+    "cni": "CF752448",
+    "teacherId": "ES120010"
+  },
+  {
+    "firstName": "Mohammed Amine",
+    "lastName": "KASMI",
+    "email": "mohammed_amine.kasmi@ump.ac.ma",
+    "phone": "067744587817",
+    "department": "FSO - Informatique",
+    "office": 10,
+    "cni": "FF752448",
+    "teacherId": "ES120011"
+  },
+  {
+    "firstName": "El miloud",
+    "lastName": "MGHARI",
+    "email": "el_miloud.mghari@ump.ac.ma",
+    "phone": "061544587817",
+    "department": "FSO - Informatique",
+    "office": 11,
+    "cni": "FF752018",
+    "teacherId": "ES120012"
+  },
+  {
+    "firstName": "Aicha",
+    "lastName": "KERFALI",
+    "email": "aicha.kerfali@ump.ac.ma",
+    "phone": "061544587817",
+    "department": "FSO - Informatique",
+    "office": 12,
+    "cni": "FF752017",
+    "teacherId": "ES120013"
+  },
+  {
+    "firstName": "Abdelazziz",
+    "lastName": "AIT MOUSSA",
+    "email": "abdelazziz.ait_moussa@ump.ac.ma",
+    "phone": "061544587112",
+    "department": "FSO - Informatique",
+    "office": 13,
+    "cni": "GE752112",
+    "teacherId": "ES120014"
+  },
+  {
+    "firstName": "Ilham",
+    "lastName": "SLIMANI",
+    "email": "ilham.slimani@ump.ac.ma",
+    "phone": "061544587742",
+    "department": "FSO - Informatique",
+    "office": 14,
+    "cni": "EE752772",
+    "teacherId": "ES120015"
+  },
+  {
+    "firstName": "Noura",
+    "lastName": "OUERDI",
+    "email": "noura.ouerdi@ump.ac.ma",
+    "phone": "061544587429",
+    "department": "FSO - Informatique",
+    "office": 15,
+    "cni": "FE752414",
+    "teacherId": "ES120016"
+  },
+  {
+    "firstName": "Nourddine",
+    "lastName": "Kerchaoui",
+    "email": "nourddine.Kerchaoui@ump.ac.ma",
+    "phone": "061544587429",
+    "department": "ENCG - Economie",
+    "office": 16,
+    "cni": "FE752415",
+    "teacherId": "ES120017"
+  }
+]

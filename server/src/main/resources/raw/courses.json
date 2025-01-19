@@ -1,0 +1,98 @@
+[
+  {
+    "title": "Machine Learning",
+    "semester": 1,
+    "teacherId": "ES120001"
+  },
+  {
+    "title": "Technologies IP et IoT",
+    "semester": 1,
+    "teacherId": "ES120002"
+  },
+  {
+    "title": "Jakarta Enterprise Edition",
+    "semester": 1,
+    "teacherId": "ES120003"
+  },
+  {
+    "title": "Cryptographie appliquée et Sécurité des réseaux",
+    "semester": 1,
+    "teacherId": "ES120004"
+  },
+  {
+    "title": "Bases de Données avancées et Bases deDonnées NoSQL",
+    "semester": 1,
+    "teacherId": "ES120005"
+  },
+  {
+    "title": "Anglais technique",
+    "semester": 1,
+    "teacherId": "ES120006"
+  },
+  {
+    "title": "Développement Mobile",
+    "semester": 2,
+    "teacherId": "ES120007"
+  },
+  {
+    "title": "Entrepôt de données et Big Data",
+    "semester": 2,
+    "teacherId": "ES120008"
+  },
+  {
+    "title": "Data Mining",
+    "semester": 2,
+    "teacherId": "ES120009"
+  },
+  {
+    "title": "Cloud Computing",
+    "semester": 2,
+    "teacherId": "ES120010"
+  },
+  {
+    "title": "Gestion de projets informatiques",
+    "semester": 2,
+    "teacherId": "ES120011"
+  },
+  {
+    "title": "Anglais des affaires",
+    "semester": 2,
+    "teacherId": "ES120012"
+  },
+
+  {
+    "title": "Applications Réparties",
+    "semester": 3,
+    "teacherId": "ES120013"
+  },
+  {
+    "title": "Traitement d’images",
+    "semester": 3,
+    "teacherId": "ES120014"
+  },
+  {
+    "title": "Génie Logiciel",
+    "semester": 3,
+    "teacherId": "ES120015"
+  },
+  {
+    "title": "Cybersécurité et CEH",
+    "semester": 3,
+    "teacherId": "ES120016"
+  },
+  {
+    "title": "Traitement automatique des langues naturelles",
+    "semester": 3,
+    "teacherId": "ES120009"
+  },
+  {
+    "title": "Entreprenariat et management",
+    "semester": 3,
+    "teacherId": "ES120017"
+  },
+  {
+    "title": "Stage",
+    "semester": 4,
+    "teacherId": null
+  }
+]

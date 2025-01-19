@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import io.github.palexdev.materialfx.controls.MFXScrollPane?>
+<?import javafx.scene.layout.VBox?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<?import java.net.URL?>
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.m2i.client.gui.controllers.SidebarController"
+      styleClass="sidebar" prefWidth="250" VBox.vgrow="ALWAYS">
+
+    <MFXScrollPane fitToWidth="true" styleClass="sidebar-scroll" VBox.vgrow="ALWAYS">
+        <VBox fx:id="menuContainer" spacing="5" styleClass="menu-container"/>
+    </MFXScrollPane>
+    <stylesheets>
+        <URL value="@../../assets/css/sidebar.css" />
+    </stylesheets>
+</VBox>

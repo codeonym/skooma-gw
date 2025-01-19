@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXTableView?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXFilterComboBox?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<?import java.net.URL?>
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.m2i.client.gui.controllers.teacher.MyCoursesViewController"
+      spacing="20" styleClass="content-view">
+    <!-- Header Section -->
+    <HBox spacing="20" alignment="CENTER_LEFT">
+        <Label text="My courses" styleClass="view-title"/>
+    </HBox>
+
+    <!-- Filters Section -->
+    <HBox spacing="15" alignment="CENTER_LEFT">
+        <!-- Search Field -->
+        <MFXTextField fx:id="searchField" floatingText="Search courses..."
+                      prefWidth="300"/>
+
+        <!-- Filters -->
+        <MFXFilterComboBox fx:id="filterField" floatingText="Filter by"
+                           prefWidth="200"/>
+    </HBox>
+
+    <!-- Table -->
+    <MFXTableView fx:id="courseTable" VBox.vgrow="ALWAYS"/>
+    <stylesheets>
+        <URL value="@../../../assets/css/teacher/courses.css" />
+    </stylesheets>
+</VBox>

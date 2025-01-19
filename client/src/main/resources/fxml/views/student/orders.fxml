@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import io.github.palexdev.materialfx.controls.MFXTableView?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.control.Label?>
+
+<?import java.net.URL?>
+<VBox fx:id="rootContainer"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.m2i.client.gui.controllers.student.GradesReportViewController"
+      spacing="10"
+      styleClass="content-pane">
+
+    <!-- Header will be added programmatically -->
+    <HBox fx:id="headerBox"
+          styleClass="header-box"/>
+
+    <!-- Button container will be added programmatically -->
+    <HBox fx:id="buttonBox"
+          styleClass="button-box"/>
+
+    <!-- Table will be configured programmatically -->
+    <MFXTableView fx:id="reportsTable"
+                  styleClass="grades-report-table"
+                  VBox.vgrow="ALWAYS"/>
+    <stylesheets>
+        <URL value="@../../../assets/css/student/orders.css" />
+    </stylesheets>
+</VBox>

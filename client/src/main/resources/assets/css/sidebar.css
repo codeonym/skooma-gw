@@ -1,0 +1,46 @@
+.sidebar {
+    -fx-background-color: #ffffff;
+    -fx-padding: 10;
+}
+
+.sidebar-scroll {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.sidebar-scroll .viewport {
+    -fx-background-color: transparent;
+}
+
+.menu-container {
+    -fx-padding: 10;
+    -fx-spacing: 5;
+}
+
+.sidebar-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 12 15 12 20; /* Added more left padding for icon spacing */
+    -fx-font-size: 14px;
+    -fx-background-radius: 5;
+    -fx-graphic-text-gap: 15; /* Space between icon and text */
+}
+
+
+.sidebar-button .label {
+    -fx-text-fill: black;
+}
+
+.sidebar-button:hover {
+    -fx-background-color: #cccccc;
+}
+
+.sidebar-button.active {
+    -fx-background-color: #dddddd;
+}
+
+.sidebar-icon {
+    -fx-icon-color: black;
+    -fx-icon-size: 16px;
+}
