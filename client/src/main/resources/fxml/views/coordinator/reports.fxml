@@ -1,14 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
+<?import io.github.palexdev.materialfx.controls.MFXTableView?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXFilterComboBox?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.m2i.client.gui.controllers.coordinator.ReportsViewController"
-            prefHeight="400.0" prefWidth="600.0">
+<?import java.net.URL?>
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.m2i.client.gui.controllers.coordinator.ReportsViewController"
+      spacing="20" styleClass="content-view">
+    <!-- Header Section -->
+    <HBox spacing="20" alignment="CENTER_LEFT">
+        <Label text="Grades Reports Management" styleClass="view-title"/>
+    </HBox>
 
-</AnchorPane>
+    <!-- Filters Section -->
+    <HBox spacing="15" alignment="CENTER_LEFT">
+        <!-- Search Field -->
+        <MFXTextField fx:id="searchField" floatingText="Search report..."
+                      prefWidth="300"/>
+
+        <!-- Filters -->
+        <MFXFilterComboBox fx:id="filterField" floatingText="Filter by"
+                           prefWidth="200"/>
+    </HBox>
+
+    <!-- Table -->
+    <MFXTableView fx:id="gradesTable" VBox.vgrow="ALWAYS"/>
+    <stylesheets>
+        <URL value="@../../../assets/css/coordinator/courses.css" />
+    </stylesheets>
+</VBox>

@@ -17,11 +17,11 @@
 }
 
 .status-label {
-    -fx-padding: 5px 10px;
+    -fx-padding: 2px 6px;
     -fx-background-radius: 15px;
     -fx-text-fill: white;
-    -fx-font-size: 12px;
-    -fx-min-width: 60px;
+    -fx-font-size: 10px;
+    -fx-min-width: 56px;
     -fx-alignment: center;
 }
 
