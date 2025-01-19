@@ -16,9 +16,10 @@ public interface CoordinatorService extends Remote {
     void createCourse(String sessionId, CourseRequestDTO courseRequestDTO) throws RemoteException;
     void updateCourse(String sessionId, CourseRequestDTO courseRequestDTO) throws RemoteException;
     void deleteCourse(String sessionId, Long courseId) throws RemoteException;
-    void generateGradeReport(String sessionId, GradesReportRequestDTO gradesReportRequestDTO) throws RemoteException;
+    void generateGradeReport(String sessionId, Long gradesReportId) throws RemoteException;
     void approveGradeReport(String sessionId, Long gradesReportId) throws RemoteException;
     void rejectGradeReport(String sessionId, Long gradesReportId) throws RemoteException;
+    List<GradesReportResponseDTO> getGradeReports(String sessionId) throws RemoteException;
     void enrollStudent(String sessionId, Long studentId, Semester semester) throws RemoteException;
     void removeStudent(String sessionId, String apogee) throws RemoteException;
     void removeTeacher(String sessionId, String teacherIdentifier) throws RemoteException;

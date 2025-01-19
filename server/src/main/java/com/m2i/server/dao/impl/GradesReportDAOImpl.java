@@ -128,7 +128,7 @@ public class GradesReportDAOImpl implements GradesReportDAO {
         Paragraph studentInfo = new Paragraph();
         studentInfo.add(new Paragraph("Student Information:", new Font(Font.FontFamily.HELVETICA, 14, Font.BOLD)));
         studentInfo.add(new Paragraph("Name: " + student.getFirstName() + " " + student.getLastName()));
-        studentInfo.add(new Paragraph("Student ID: " + student.getApogee()));
+        studentInfo.add(new Paragraph("Student Apogee: " + student.getApogee()));
         studentInfo.setSpacingAfter(20);
         document.add(studentInfo);
     }
@@ -139,17 +139,21 @@ public class GradesReportDAOImpl implements GradesReportDAO {
 
         // Add table headers
         table.addCell("Course");
-        table.addCell("Credit Hours");
         table.addCell("Grade");
+        table.addCell("Year");
         table.addCell("Status");
 
+        double score = 0;
         // Add grade rows
         for (Grade grade : grades) {
             table.addCell(grade.getCourse().getName());
-            table.addCell(String.valueOf("-")); // Credit hours not implemented
             table.addCell(String.valueOf(grade.getValue()));
+            table.addCell(String.valueOf(grade.getYear()));
             table.addCell(grade.getValue() >= 10 ? "PASS" : "FAIL");
+            score += grade.getValue();
         }
+        table.addCell("Average");
+        table.addCell(String.valueOf(score / grades.size()));
 
         document.add(table);
     }
@@ -163,7 +167,7 @@ public class GradesReportDAOImpl implements GradesReportDAO {
 
         // Add coordinator signature
         footer.add(new Paragraph("\n\nCoordinator: " + coordinatorFullName));
-        footer.add(new Paragraph("Signature: _________________"));
+        footer.add(new Paragraph("Signature: ______"+ coordinatorFullName.toUpperCase() +"________"));
 
         document.add(footer);
     }
@@ -175,15 +179,22 @@ public class GradesReportDAOImpl implements GradesReportDAO {
 
     @Override
     public void reject(Long id) {
-        em.createQuery("UPDATE GradesReport g SET g.status = 'REJECTED' WHERE g.id = :id")
+        em.createQuery("UPDATE GradesReport g SET g.status = :status WHERE g.id = :id")
                 .setParameter("id", id)
+                .setParameter("status", Status.REJECTED)
                 .executeUpdate();
     }
 
     @Override
     public void approve(Long id) {
-        em.createQuery("UPDATE GradesReport g SET g.status = 'APPROVED' WHERE g.id = :id")
+        em.createQuery("UPDATE GradesReport g SET g.status = :status WHERE g.id = :id")
                 .setParameter("id", id)
+                .setParameter("status", Status.APPROVED)
                 .executeUpdate();
+    }
+
+    @Override
+    public List<GradesReport> findAll() {
+        return em.createQuery("SELECT g FROM GradesReport g", GradesReport.class).getResultList();
     }
 }

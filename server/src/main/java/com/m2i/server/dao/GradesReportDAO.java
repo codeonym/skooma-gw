@@ -16,4 +16,5 @@ public interface GradesReportDAO {
     public void reject(Long id);
 
     public void approve(Long id);
+    public List<GradesReport> findAll();
 }

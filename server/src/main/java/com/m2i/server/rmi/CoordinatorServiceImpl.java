@@ -10,6 +10,7 @@ import com.m2i.server.mapper.GradesReportMapper;
 import com.m2i.server.mapper.StudentsMapper;
 import com.m2i.server.mapper.TeachersMapper;
 import com.m2i.server.utils.ServiceLocator;
+import com.m2i.shared.auth.UserSession;
 import com.m2i.shared.dto.*;
 import com.m2i.shared.entities.*;
 import com.m2i.shared.utils.SecurityUtils;
@@ -31,6 +32,8 @@ public class CoordinatorServiceImpl extends UnicastRemoteObject implements Coord
     private TeacherDAO teacherDAO;
     @EJB
     private StudentDAO studentDAO;
+    @EJB
+    private SessionDAO sessionDAO;
 
     public CoordinatorServiceImpl() throws RemoteException {
         super();
@@ -41,6 +44,7 @@ public class CoordinatorServiceImpl extends UnicastRemoteObject implements Coord
         this.courseDAO = ServiceLocator.lookup("ejb:/server-1.0-SNAPSHOT/CourseDAOImpl!com.m2i.server.dao.CourseDAO");
         this.studentDAO = ServiceLocator.lookup("ejb:/server-1.0-SNAPSHOT/StudentDAOImpl!com.m2i.server.dao.StudentDAO");
         this.teacherDAO = ServiceLocator.lookup("ejb:/server-1.0-SNAPSHOT/TeacherDAOImpl!com.m2i.server.dao.TeacherDAO");
+        this.sessionDAO = ServiceLocator.lookup("ejb:/server-1.0-SNAPSHOT/SessionDAOImpl!com.m2i.server.dao.SessionDAO");
     }
 
     @Override
@@ -164,11 +168,12 @@ public class CoordinatorServiceImpl extends UnicastRemoteObject implements Coord
     }
 
     @Override
-    public void generateGradeReport(String sessionId, GradesReportRequestDTO gradesReportRequestDTO) throws RemoteException {
+    public void generateGradeReport(String sessionId, Long gradesReportId) throws RemoteException {
         try {
             securityUtils.checkAuthorization(sessionId, UserRole.COORDINATOR);
-            Coordinator coordinator = coordinatorDAO.findByUsername(sessionId);
-            GradesReport gradesReport = GradesReportMapper.toEntity(gradesReportRequestDTO);
+            UserSession user = sessionDAO.findBySessionId(sessionId);
+            Coordinator coordinator = coordinatorDAO.findByUsername(user.getUsername());
+            GradesReport gradesReport = gradesReportDAO.findById(gradesReportId);
             Student student = studentDAO.findByApogee(gradesReport.getStudent().getApogee());
             if (student == null) {
                 throw new RemoteException("Student not found");
@@ -214,6 +219,11 @@ public class CoordinatorServiceImpl extends UnicastRemoteObject implements Coord
             log.error("Error rejecting grade report: " + e.getMessage());
             throw new RemoteException("Error rejecting grade report: " + e.getMessage());
         }
+    }
+
+    @Override
+    public List<GradesReportResponseDTO> getGradeReports(String sessionId) throws RemoteException {
+        return gradesReportDAO.findAll().stream().map(GradesReportMapper::toDTO).toList();
     }
 
     @Override
